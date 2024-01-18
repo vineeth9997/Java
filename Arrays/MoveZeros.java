@@ -9,7 +9,7 @@ public class MoveZeros {
         System.out.println("Print the size of the array:");
         int n = sc.nextInt();
         int arr[]=new int[n];
-        int fin[]=new int[n];
+        int temp[]=new int[n];
         int l=0;
         int m=n-1;
         System.out.println("Enter the elements of the array:");
@@ -21,12 +21,12 @@ public class MoveZeros {
         {
             if(arr[i]!=0)
             {
-                fin[l]=arr[i];
+                temp[l]=arr[i];
                 l++;
             }
             else
             {
-                fin[m]=0;
+                temp[m]=0;
                 m--;
             }
         }
@@ -39,7 +39,7 @@ public class MoveZeros {
         System.out.println("Updated array");
         for(int z=0;z<n;z++)
         {
-            System.out.print(fin[z]+" ");
+            System.out.print(temp[z]+" ");
         }
 
     }
